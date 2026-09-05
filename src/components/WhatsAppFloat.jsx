@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import styles from './WhatsAppFloat.module.css'
 
-const WA_NUMBER = '52TUNUMERO'
+const WA_NUMBER = '522219663226'
 const WA_MSG = encodeURIComponent('Hola Cero+, me gustaría saber más sobre sus servicios.')
 
 export default function WhatsAppFloat() {
