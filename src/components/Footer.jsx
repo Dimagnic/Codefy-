@@ -1,4 +1,5 @@
 import styles from './Footer.module.css'
+import logoCeroWhite from '../assets/logo-cero-white.svg'
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className={styles.glow} aria-hidden="true" />
       <div className={styles.top}>
         <div className={styles.brand}>
-          <div className={styles.logo}>Cer<span>o+</span></div>
+          <img src={logoCeroWhite} alt="Cero+" className={styles.logo} />
           <p>Soluciones digitales a medida para negocios que quieren crecer. México.</p>
         </div>
         <div className={styles.col}>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import styles from './Navbar.module.css'
+import logoCero from '../assets/logo-cero.svg'
 
 const LINKS = [
   { label: 'Servicios', href: '#servicios' },
@@ -21,7 +22,7 @@ export default function Navbar() {
   return (
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
       <a href="#" className={styles.logo}>
-        Cer<span>o+</span>
+        <img src={logoCero} alt="Cero+" className={styles.logoImg} />
       </a>
 
       <ul className={`${styles.links} ${menuOpen ? styles.open : ''}`}>
