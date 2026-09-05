@@ -30,7 +30,7 @@ export default function Footer() {
         <div className={styles.col}>
           <h4>Contacto</h4>
           <ul>
-            <li><a href="https://wa.me/52TUNUMERO" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="https://wa.me/522219663226" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
             <li><a href="mailto:hola@ceromass.com">hola@ceromass.com</a></li>
           </ul>
         </div>

@@ -8,7 +8,7 @@ export default function CTA() {
       <h2 className={styles.title}>¿Tienes una idea?<br />Hagámosla realidad.</h2>
       <p className={styles.sub}>Cuéntanos tu proyecto. Primera consulta sin costo, sin compromisos.</p>
       <a
-        href={`https://wa.me/52TUNUMERO?text=${WA_MSG}`}
+        href={`https://wa.me/522219663226?text=${WA_MSG}`}
         className={styles.btn}
         target="_blank"
         rel="noopener noreferrer"

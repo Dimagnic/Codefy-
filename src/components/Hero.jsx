@@ -54,7 +54,7 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="https://wa.me/52TUNUMERO?text=Hola%20Cero%2B%2C%20tengo%20un%20proyecto."
+            href="https://wa.me/522219663226?text=Hola%20Cero%2B%2C%20tengo%20un%20proyecto."
             className={styles.btnGhost}
             target="_blank"
             rel="noopener noreferrer"

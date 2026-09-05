@@ -32,7 +32,7 @@ export default function Navbar() {
         ))}
         <li>
           <a
-            href="https://wa.me/52TUNUMERO"
+            href="https://wa.me/522219663226"
             className={styles.cta}
             target="_blank"
             rel="noopener noreferrer"
