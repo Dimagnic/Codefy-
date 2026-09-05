@@ -2,6 +2,7 @@ import styles from './Productos.module.css'
 
 const PILLS = [
   { icon: '🤖', label: 'ClienteAI.site', href: 'https://clienteai.site' },
+{ icon: '💰', label: 'ADN Puebla', href: 'https://adnpuebla.site' },
   { icon: '🛍️', label: 'E-commerce Engine', href: '#' },
   { icon: '📋', label: 'POS Inteligente', href: '#' },
   { icon: '📈', label: 'Dashboard Analítico', href: '#' },
