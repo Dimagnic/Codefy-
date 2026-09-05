@@ -5,13 +5,39 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.orb1} />
       <div className={styles.orb2} />
+
+      <div className={styles.orbitWrap} aria-hidden="true">
+        <svg className={styles.orbitSvg} viewBox="0 0 400 400" fill="none">
+          <circle cx="200" cy="200" r="164" stroke="rgba(212,175,55,0.22)" strokeWidth="1"/>
+          <circle cx="200" cy="200" r="112" stroke="rgba(14,165,233,0.24)" strokeWidth="1"/>
+          <circle cx="200" cy="200" r="62" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+          <g className={styles.orbitSpinSlow}>
+            <line x1="200" y1="200" x2="200" y2="36" stroke="rgba(212,175,55,0.18)" strokeWidth="1"/>
+            <circle cx="200" cy="36" r="6" fill="var(--dorado-light)"/>
+          </g>
+          <g className={styles.orbitSpinReverse}>
+            <line x1="200" y1="200" x2="312" y2="200" stroke="rgba(14,165,233,0.2)" strokeWidth="1"/>
+            <circle cx="312" cy="200" r="5" fill="var(--azul-light)"/>
+          </g>
+          <g className={styles.orbitSpinFast}>
+            <circle cx="200" cy="138" r="4" fill="var(--blanco)" fillOpacity="0.8"/>
+          </g>
+          <circle cx="200" cy="200" r="18" fill="url(#coreGlow)"/>
+          <defs>
+            <radialGradient id="coreGlow" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0%" stopColor="var(--dorado-light)" stopOpacity="0.9"/>
+              <stop offset="100%" stopColor="var(--dorado)" stopOpacity="0"/>
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
       <div className={styles.content}>
         <div className={styles.eyebrow}>
           <span className={styles.dot} />
           Soluciones Digitales · México
         </div>
         <h1 className={styles.title}>
-          Tu negocio<br />
+          <span className={styles.shineLayer}>Tu negocio<br /></span>
           empieza en <span className={styles.accent}>cero.</span>
           <span className={styles.dim}> Nosotros lo<br />llevamos más allá.</span>
         </h1>

@@ -1,14 +1,22 @@
 .footer {
-  background: var(--negro);
-  padding: 64px 48px 36px;
+  background: var(--negro-azabache);
+  padding: 72px 48px 36px;
   position: relative;
+  overflow: hidden;
 }
 .footer::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(14,165,233,0.4), transparent);
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--dorado) 25%, var(--dorado-light) 50%, var(--dorado) 75%, transparent);
+}
+.glow {
+  position: absolute;
+  top: -180px; left: -120px;
+  width: 480px; height: 480px;
+  background: radial-gradient(circle, rgba(212,175,55,0.14) 0%, transparent 70%);
+  pointer-events: none;
 }
 .top {
   display: flex;
@@ -16,18 +24,21 @@
   gap: 48px;
   flex-wrap: wrap;
   margin-bottom: 48px;
+  position: relative;
+  z-index: 1;
 }
 .brand .logo {
   font-family: var(--font-display);
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 800;
   color: var(--blanco);
   margin-bottom: 10px;
+  text-shadow: 0 0 24px rgba(255,255,255,0.12);
 }
-.brand .logo span { color: var(--rojo); }
+.brand .logo span { color: var(--dorado-light); }
 .brand p {
   font-size: 0.86rem;
-  color: rgba(255,255,255,0.38);
+  color: rgba(255,255,255,0.45);
   line-height: 1.65;
   max-width: 260px;
 }
@@ -36,26 +47,28 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: rgba(255,255,255,0.28);
+  color: var(--dorado);
   margin-bottom: 16px;
 }
 .col ul { list-style: none; }
 .col li { margin-bottom: 10px; }
 .col a {
-  color: rgba(255,255,255,0.52);
+  color: rgba(255,255,255,0.6);
   font-size: 0.9rem;
-  transition: color 0.2s;
+  transition: color 0.2s, padding-left 0.2s;
 }
-.col a:hover { color: var(--blanco); }
+.col a:hover { color: var(--blanco); padding-left: 4px; }
 .bottom {
-  border-top: 1px solid rgba(255,255,255,0.07);
+  border-top: 1px solid rgba(212,175,55,0.16);
   padding-top: 24px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 12px;
   font-size: 0.78rem;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.35);
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 900px) {
   .footer { padding: 48px 24px 28px; }
