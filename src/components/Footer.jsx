@@ -29,14 +29,14 @@ export default function Footer() {
         <div className={styles.col}>
           <h4>Contacto</h4>
           <ul>
-            <li><a href="https://wa.me/522219663226" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-            <li><a href="mailto:comercial@ceropluss.com">comercial@ceroplus.com</a></li>
+            <li><a href="https://wa.me/52TUNUMERO" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="mailto:hola@ceromass.com">hola@ceromass.com</a></li>
           </ul>
         </div>
       </div>
       <div className={styles.bottom}>
-        <span>© 2026 Cero+. Todos los derechos reservados.</span>
-        <span>Hecho con ❤️ en Puebla</span>
+        <span>© 2025 Cero+. Todos los derechos reservados.</span>
+        <span>Hecho con ❤️ en México por Nicolás Gontaro</span>
       </div>
     </footer>
   )
