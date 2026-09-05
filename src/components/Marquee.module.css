@@ -1,0 +1,24 @@
+.wrap {
+  background: linear-gradient(90deg, var(--azul-dark), var(--azul));
+  padding: 14px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.track {
+  display: inline-flex;
+  animation: scroll 30s linear infinite;
+}
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.9);
+  padding-right: 24px;
+}
+.star { color: rgba(255,255,255,0.4); }
+@keyframes scroll { from{transform:translateX(0);} to{transform:translateX(-50%);} }

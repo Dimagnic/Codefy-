@@ -1,0 +1,29 @@
+:root {
+  --azul: #0EA5E9;
+  --azul-dark: #0369A1;
+  --azul-light: #38BDF8;
+  --azul-deep: #082F49;
+  --azul-glow: rgba(14, 165, 233, 0.35);
+  --negro: #0B0D10;
+  --negro-suave: #14171B;
+  --gris: #4A5158;
+  --blanco: #FFFFFF;
+  --gris-claro: #F4F6F8;
+  --gris-medio: #E2E6EA;
+  --texto: #1C2024;
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
+  /* Compatibilidad: variables antiguas del tema rojo apuntan ahora al azul */
+  --rojo: var(--azul);
+  --rojo-dark: var(--azul-dark);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--blanco);
+  color: var(--texto);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+a { text-decoration: none; }
