@@ -1,5 +1,5 @@
 import styles from './Footer.module.css'
-import logoCeroWhite from '../assets/logo-cero-white.svg'
+import logoCeroWhite from '../assets/logo.png'
 
 export default function Footer() {
   return (

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import styles from './Navbar.module.css'
-import logoCero from '../assets/logo-cero.svg'
+import logoCero from '../assets/logo.png'
 
 const LINKS = [
   { label: 'Servicios', href: '#servicios' },
@@ -8,6 +8,8 @@ const LINKS = [
   { label: 'Productos', href: '#productos' },
   { label: '¿Por qué Cero+?', href: '#porque' },
 ]
+
+
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
